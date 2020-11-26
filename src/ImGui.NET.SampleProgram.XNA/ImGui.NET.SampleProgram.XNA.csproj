@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\external\FNA\FNA.Core.csproj" />
+        <!-- <ProjectReference Include="..\..\external\FNA\FNA.Core.csproj" /> -->
         <ProjectReference Include="..\ImGui.NET\ImGui.NET.csproj" />
     </ItemGroup>
 
@@ -22,6 +22,10 @@
       <Content Include="$(RepositoryRootDirectory)/external/x64/**" CopyToOutputDirectory="PreserveNewest" />
       <Content Include="$(RepositoryRootDirectory)/external/lib64/**" CopyToOutputDirectory="PreserveNewest" />
       <Content Include="$(RepositoryRootDirectory)/external/osx/**" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
     </ItemGroup>
 
 
