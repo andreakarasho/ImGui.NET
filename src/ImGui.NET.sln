@@ -1,6 +1,7 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGui.NET", "ImGui.NET\ImGui.NET.csproj", "{AD548A1D-01B2-410E-B3ED-ADAC05C3C4A3}"
 EndProject
@@ -8,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGui.NET.SampleProgram", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGui.NET.SampleProgram.XNA", "ImGui.NET.SampleProgram.XNA\ImGui.NET.SampleProgram.XNA.csproj", "{3024336E-9A19-475F-A95D-60A60C0B1C0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGenerator", "CodeGenerator\CodeGenerator.csproj", "{62A4CFE3-C5F5-45F5-AD18-3F7E6739BD09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeGenerator", "CodeGenerator\CodeGenerator.csproj", "{62A4CFE3-C5F5-45F5-AD18-3F7E6739BD09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FNA.Core", "..\external\FNA\FNA.Core.csproj", "{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +71,15 @@ Global
 		{62A4CFE3-C5F5-45F5-AD18-3F7E6739BD09}.Release|x64.Build.0 = Release|Any CPU
 		{62A4CFE3-C5F5-45F5-AD18-3F7E6739BD09}.Release|x86.ActiveCfg = Release|Any CPU
 		{62A4CFE3-C5F5-45F5-AD18-3F7E6739BD09}.Release|x86.Build.0 = Release|Any CPU
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Debug|Any CPU.Build.0 = Debug|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Debug|x64.ActiveCfg = Debug|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Debug|x64.Build.0 = Debug|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Debug|x86.ActiveCfg = Debug|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Release|Any CPU.ActiveCfg = Release|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Release|x64.ActiveCfg = Release|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Release|x64.Build.0 = Release|x64
+		{BDF19F70-98C9-455C-BDA1-FBDCCE435FED}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
