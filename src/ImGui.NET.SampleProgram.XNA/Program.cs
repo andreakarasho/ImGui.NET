@@ -8,6 +8,8 @@ namespace ImGuiNET.SampleProgram.XNA
         {
             CoreDllMap.Register(typeof(Color).Assembly);
 
+            System.Environment.SetEnvironmentVariable("FNA3D_FORCE_DRIVER", "Vulkan");
+
             using (var game = new SampleGame()) game.Run();
         }
     }
