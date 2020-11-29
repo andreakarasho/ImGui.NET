@@ -7,7 +7,7 @@ namespace ImGuiNET.SampleProgram.XNA
     {
         public static void Main(string[] args)
         {
-            System.Environment.SetEnvironmentVariable("FNA3D_FORCE_DRIVER", "Vulkan");
+            //System.Environment.SetEnvironmentVariable("FNA3D_FORCE_DRIVER", "Vulkan");
 
             CoreDllMap.Register(typeof(Color).Assembly);
 
