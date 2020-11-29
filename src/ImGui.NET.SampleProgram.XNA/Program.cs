@@ -7,7 +7,11 @@ namespace ImGuiNET.SampleProgram.XNA
     {
         public static void Main(string[] args)
         {
+            System.Environment.SetEnvironmentVariable("FNA3D_FORCE_DRIVER", "Vulkan");
+
             CoreDllMap.Register(typeof(Color).Assembly);
+
+            SDL2.SDL.SDL_SetHint("FNA3D_FORCE_DRIVER", "Vulkan");
 
             FNALoggerEXT.LogError += (e) =>
             {
@@ -25,7 +29,6 @@ namespace ImGuiNET.SampleProgram.XNA
             };
 
             //System.Environment.SetEnvironmentVariable("FNA3D_OPENGL_FORCE_ES3", "1");
-            //System.Environment.SetEnvironmentVariable("FNA3D_FORCE_DRIVER", "Vulkan");
 
             using (var game = new SampleGame()) game.Run();
         }
